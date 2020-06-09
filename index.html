@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Good Place : Survey Form</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+	</head>
+
+    <body>
+			
+		<header>
+			<h1 id="title">The Good Place : Survey Form</h1>
+			<p id="description">Let us know how to make The Good Place ever better</p>
+		</header>
+
+		<form id="survey-form" method="GET">
+			<div class="form-div">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" type="text" placeholder="Enter your name here" required>
+			</div>
+			<div class="form-div">
+				<label id="email-label" for="email">Email</label>
+				<input id="email" type="email" placeholder="Enter your email here" required>
+			</div>
+			<div class="form-div">
+				<label id="number-label" for="number">Age</label>
+				<input id="number" type="number" placeholder="Enter your age here (optional)" min="15" max="110">
+			</div>
+			<div class="form-div">
+				<p class="p-question">When did you arrive in The Good Place?</p>
+					<select id="dropdown" name="arrival" required>
+					<option value="" selected disabled>Select a period</option>
+					<option value="past">A few Bearimies ago</option>
+					<option value="present">During this Bearimy</option>
+					<option value="wednesday">Wednesday</option>
+				</select>
+			</div>
+			<div class="form-div">
+				<p class="p-question">How would you describe your afterlife in our neighborhood?</p>
+				<div id="radio-div">
+					<label><input type="radio" class="input-radio" name="humanSatisfaction" value="awful" required>Awful</label> 
+					<label><input type="radio" class="input-radio" name="humanSatisfaction" value="bad">Bad</label>
+					<label><input type="radio" class="input-radio" name="humanSatisfaction" value="average">Average</label>
+					<label><input type="radio" class="input-radio" name="humanSatisfaction" value="good">Good</label>
+					<label><input type="radio" class="input-radio" name="humanSatisfaction" value="excellent">Excellent</label>
+				</div>
+			</div>
+			<div class="form-div">
+				<p class="p-question">How can we make The Good Place even better? <small>(Check all that apply)</small></p>
+				<div id="checkbox-div">
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="superpowers">Give humans superpowers</label>
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="fly">Give humans the ability to fly</label>					
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="addCuteAnimals">Add cute animals</label>
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="stopTorture">Stop psychological torture</label>						
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="allowCurseWords">Allow curse words</label>
+					<label><input type="checkbox" class="input-checkbox" name="improve" value="updateJanet">Update Janet more often</label>
+				</div>
+			</div>
+			<div class="form-div">
+				<p class="p-question">Any comments or suggestions?</p>
+				<textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+			</div>
+			<div id="button-div">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+
+	</body>
+</html>
